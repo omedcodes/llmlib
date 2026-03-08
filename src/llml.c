@@ -49,7 +49,18 @@ int main()
     vec3 vector3 = vec3_create(3.4f, 3.6f, 3.9f);
 
     vec3 v = vec3_add(vector, vector3);
-    printf("%f %f %f", v.x, v.y, v.z);
-    printf("%f", vec3_length(v));
+    printf("%f %f %f\n", v.x, v.y, v.z);
+    printf("%f\n", vec3_length(v));
+
+    vec3 pointA = vec3_create(1.0f, 2.0f, 3.0f);
+    vec3 pointB = vec3_create(4.0f, 6.0f, 3.0f);
+
+    vec3 difference = vec3_subtract(pointB, pointA);
+
+    // length between the vectors
+    float distance = vec3_length(difference);
+
+    printf("Distance: %f\n", distance);
+
     return 0;
 }

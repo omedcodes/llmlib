@@ -4,7 +4,7 @@
     #define M_PI 3.14159265358979323846f
 #endif
 
-// #include <math.h>
+#include <math.h>
 
 #include "area/circle.h"
 #include "area/square.h"
