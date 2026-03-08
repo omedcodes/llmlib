@@ -4,6 +4,8 @@
     #define M_PI 3.14159265358979323846f
 #endif
 
+// #include <math.h>
+
 #include "area/circle.h"
 #include "area/square.h"
 #include "area/rectangle.h"
@@ -13,3 +15,5 @@
 #include "volume/cuboid.h"
 #include "volume/sphere.h"
 #include "volume/cylinder.h"
+
+#include "vector/vec3.h"
