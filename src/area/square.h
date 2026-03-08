@@ -1,11 +1,11 @@
 #pragma once
 
-static inline double area_square(double side) 
+static inline float area_square(float side) 
 {
     return side * side;
 }
 
-static inline double perimeter_square(double side) 
+static inline float perimeter_square(float side) 
 {
     return 4.0 * side;
 }
