@@ -8,3 +8,8 @@ static inline double circle_area(double radius)
 {
     return M_PI * (radius * radius);
 }
+
+static inline double circle_circumference(double radius) 
+{
+    return 2.0 * M_PI * radius;
+}
