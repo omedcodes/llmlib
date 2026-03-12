@@ -44,11 +44,20 @@ static inline mat4 mat4_scale(mat4 m, vec3 v) {
 }
 
 static inline vec3 mat4_mul_vec3(mat4 m, vec3 v) {
-    vec3 result;
-    result.x = m.data[0] * v.x + m.data[4] * v.y + m.data[8] * v.z + m.data[12];
-    result.y = m.data[1] * v.x + m.data[5] * v.y + m.data[9] * v.z + m.data[13];
-    result.z = m.data[2] * v.x + m.data[6] * v.y + m.data[10] * v.z + m.data[14];
-    return result;
+    return (vec3){
+        m.data[0] * v.x + m.data[4] * v.y + m.data[8] * v.z + m.data[12],
+        m.data[1] * v.x + m.data[5] * v.y + m.data[9] * v.z + m.data[13],
+        m.data[2] * v.x + m.data[6] * v.y + m.data[10] * v.z + m.data[14]
+    };
+}
+
+static inline vec4 mat4_mul_vec4(mat4 m, vec4 v) {
+    return (vec4){
+        m.data[0] * v.x + m.data[4] * v.y + m.data[8] * v.z + m.data[12] * v.w,
+        m.data[1] * v.x + m.data[5] * v.y + m.data[9] * v.z + m.data[13] * v.w,
+        m.data[2] * v.x + m.data[6] * v.y + m.data[10] * v.z + m.data[14] * v.w,
+        m.data[3] * v.x + m.data[7] * v.y + m.data[11] * v.z + m.data[15] * v.w
+    };
 }
 
 static inline mat4 mat4_perspective(float fov_radians, float aspect, float near_p, float far_p) {

@@ -6,6 +6,7 @@
 
 #include <math.h>
 
+#include "algebra/algebra.h"
 #include "trigonometry/trigonometry.h"
 
 #include "area/circle.h"
@@ -18,6 +19,8 @@
 #include "volume/sphere.h"
 #include "volume/cylinder.h"
 
+#include "vector/vec2.h"
 #include "vector/vec3.h"
+#include "vector/vec4.h"
 
 #include "matrix/mat4.h"
