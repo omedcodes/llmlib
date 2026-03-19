@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-#include "./vector/vec3.h"
+#include "llml/vector/vec3.h"
 
 static uint32_t _rng_state = 10000;
 

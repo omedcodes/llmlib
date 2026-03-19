@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -std=c23 -O2 -Wall -Wextra -I./src
+CFLAGS = -std=c23 -O2 -Wall -Wextra -I./include
 
 TARGET = llml
 

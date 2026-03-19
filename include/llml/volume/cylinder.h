@@ -1,6 +1,5 @@
 #pragma once
 
-
 static inline float volume_cylinder(float radius, float height)
 {
     return M_PI * (radius * radius) * height;

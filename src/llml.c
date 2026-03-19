@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "llml.h"
+#include <llml/llml.h>
 
 int main() {
     vec4 orange = color_hex(0xFF5733);

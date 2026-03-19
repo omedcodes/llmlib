@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../vector/vec2.h"
-#include "../vector/vec3.h"
+#include "llml/vector/vec2.h"
+#include "llml/vector/vec3.h"
 #include <stdbool.h>
 
 static inline bool col_point_in_aabb2d(vec2 point, vec2 min, vec2 max) {

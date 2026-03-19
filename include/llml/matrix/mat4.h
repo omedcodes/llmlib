@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../vector/vec3.h"
-#include "./trigonometry/trigonometry.h"
+#include "llml/vector/vec3.h"
+#include "llml/trigonometry/trigonometry.h"
 #include <math.h>
 
 typedef struct {
