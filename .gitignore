@@ -4,6 +4,7 @@
 *.a
 *.lib
 *.dll
+*.ps1
 *.res
 *.bmp
 .vscode/
